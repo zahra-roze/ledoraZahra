@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Z-PMLM</title>
+    <link rel="website icon" href="logo/logo.png" type="png">
+    <!--    <link href="Health-and-caree.css" rel="stylesheet">-->
+    <link href="stylefirstpage.css" rel="stylesheet">
+</head>
+<style>
+
+    @keyframes colorChange {
+        0% {
+            background: linear-gradient(to right, #e1159a, #9b08f3);
+        }
+        50% {
+            background: linear-gradient(to right, #9b08f3, #e1159a);
+        }
+        100% {
+            background: linear-gradient(to right, #e1159a, #9b08f3);
+        }
+    }
+
+    #div-baner{
+        animation: colorChange 4s infinite;
+        position: relative;
+        width: 92%;
+        height: 90px;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.64);
+        /*background-image: linear-gradient(210deg, #ff5445 0%, #C21212 100%);*/
+        background:linear-gradient(135deg, #f02fc2 0%,#6094ea 100%);
+        /*border-radius: 65px 65px 65px 65px;*/
+        background-color: #ff5445;
+        padding-right: 40px;
+        padding-bottom: 40px;
+        padding-left: 40px;
+        padding-top: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-style: solid;
+        border-color: #FFFFFF;
+    }
+
+    #text-baner{
+        position: absolute;
+        right: 530px;
+        top: 0px;
+        font-family: roya;
+        /*margin-right: 480px;*/
+        /*margin-top: 0px;*/
+
+    }
+    #text-baner-2{
+        font-family: roya;
+        position: absolute;
+        right: 480px;
+        top: 70px;
+        text-align: center;
+    }
+    #down{
+        position: absolute;
+        right: 850px;
+        top: 83px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #down:hover{
+        color: #13f1fc;
+        cursor: pointer;
+        transition: 0.6s ease;
+    }
+    @keyframes fade {
+        0% {
+            opacity: 100;
+        }
+        25%{
+            opacity: 85;
+        }
+        35%{
+            opacity: 60;
+        }
+        45%{
+            opacity: 40;
+        }
+        55%{
+            opacity: 20;
+        }
+        65%{
+            opacity: 10;
+        }
+        75%{
+            opacity: 5;
+        }
+        100%{
+            opacity: 0;
+        }
+
+    }
+    #top {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        left: 30px;
+        z-index: 99;
+        font-size: 25px;
+        border: none;
+        background-color: #9c3ba6;
+        color: white;
+        cursor: pointer;
+
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+    }
+
+    #top:hover {
+        background-color: #a358ab;
+    }
+    #woman-baner-f{
+        position: absolute;
+        width: 160px;
+        height: 150px;
+        top: 15px;
+    }
+    #man-baner-f{
+        position: absolute;
+        width: 160px;
+        height: 150px;
+        left: 35px;
+        top: 15px;
+    }
+
+    /**********************************استایل های هدر**********************************/
+    @font-face{
+        font-family:roya;
+        src:url('font/RoyaR.woff') format('woff');
+        font-weight:normal;
+        font-style:normal;
+    }
+    @font-face{
+        font-family:roya;
+        src:url('font/RoyaB.woff') format('woff');
+        font-weight:bold;
+        font-style:normal;
+    }
+    *{
+        font-family: roya;
+    }
+    #pic1
+    {
+        padding-top: 25px;
+
+    }
+
+    .dropdown-contect li a{
+        color: black;
+        padding-right: 35px;
+        text-decoration: none;
+        display: block;
+        padding-top: 12px;
+
+    }
+
+    .dropdown-contect li a:hover
+    {
+        color: #9C27B0;
+    }
+
+    /**/
+    .dropdown2{
+        position: relative;
+
+
+    }
+    .dropdown-contect2{
+        display: none;
+        position: absolute;
+        background-color: #ededed;
+        width: 300px;
+        top: 65px;
+        left: 600px;
+        list-style-type: none;
+        padding: 1px;
+        /*margin-top: 70px;*/
+        /*margin-right: 300px;*/
+        z-index: 2;
+        border-radius: 10px;
+    }
+    .dropdown-contect2 li a{
+        color: black;
+        padding-right: 35px;
+        text-decoration: none;
+        display: block;
+        padding-top: 12px;
+    }
+
+    .dropdown-contect2 li a:hover
+    {
+        color: #9C27B0;
+    }
+    .dropdown2:hover .dropdown-contect2{
+        display: block;
+    }
+    .dropdown-contect2 li #zirtext2-1{
+        padding-right: 35px;
+        float: right;
+
+    }
+    .dropdown-contect2 li #zirtext2-2
+    {
+        padding-right: 35px;
+
+
+    }
+    .dropdown-contect2 #sec2-2{
+        background-color: #ededed;
+        float: right;
+        margin-right: 10px;
+    }
+    .dropdown-contect2 #sec2-2 li a{
+        padding-top: 12px;
+    }
+
+    .dropdown-contect2 #sec2-3 li a{
+        padding-top: 12px;
+    }
+
+
+    .dropdown-contect2 #sec2-4 li a{
+        padding-top: 12px;
+    }
+    /**/
+    /*sec3*/
+
+    .dropdown3{
+        position: relative;
+
+    }
+    .dropdown-contect3{
+        display: none;
+        position: absolute;
+        background-color: #ededed;
+        width: 300px;
+        top: 65px;
+        right: 20%;
+        list-style-type: none;
+        padding: 1px;
+        /*margin-top: 70px;*/
+        /*margin-right: 300px;*/
+        z-index: 2;
+        border-radius: 10px;
+
+
+    }
+    .dropdown-contect3 li a{
+        color: black;
+        padding-right: 35px;
+        text-decoration: none;
+        display: block;
+        padding-top: 12px;
+    }
+
+    .dropdown-contect3 li a:hover
+    {
+        color: #9C27B0;
+    }
+    .dropdown3:hover .dropdown-contect3{
+        display: block;
+    }
+    .dropdown-contect3 li #zirtext3-1{
+        padding-right: 35px;
+        float: right;
+
+    }
+
+    .dropdown-contect3 #sec3-1{
+        background-color: #ededed;
+        width: 250px;
+        display: inline-block;
+        float: right;
+        border-radius: 10px;
+    }
+    .dropdown-contect3 #sec3-2 li a{
+        padding-top: 12px;
+    }
+    /**/
+    .dropdown4{
+        position: relative;
+
+    }
+    .dropdown-contect4{
+        display: none;
+        position: absolute;
+        background-color: #ededed;
+        width: 300px;
+        top: 65px;
+        right: 28%;
+        list-style-type: none;
+        padding: 1px;
+        /*margin-top: 70px;*/
+        /*margin-right: 300px;*/
+        z-index: 2;
+        border-radius: 10px;
+
+    }
+    .dropdown-contect4 li a{
+        color: black;
+        padding-right: 35px;
+        text-decoration: none;
+        display: block;
+        padding-top: 12px;
+    }
+
+    .dropdown-contect4 li a:hover
+    {
+        color: #9C27B0;
+
+    }
+    .dropdown4:hover .dropdown-contect4{
+        display: block;
+    }
+    .dropdown-contect4 li #zirtext4-1{
+        padding-right: 35px;
+    }
+    .dropdown-contect4 #sec-4-1{
+        background-color: #ededed;
+        width: 250px;
+        display: inline-block;
+        float: right;
+        border-radius: 10px;
+    }
+    #first{
+        position: relative;
+        /*background-color: red;*/
+        width: 1340px;
+        height: 90px;
+
+
+    }
+    #fistu{
+        position: absolute;
+        /*background-color: blue;*/
+        width: 100%;
+        list-style-type: none;
+        padding: 0;
+        font-size: 20px;
+        line-height: 40px;
+        /*float: right;*/
+        /*box-shadow:0 0 4px #9C27B0;*/
+        margin: auto;
+
+    }
+    .head{
+
+        float: right;
+        width: 90px;
+        margin-top: 30px;
+        font-family: roya;
+
+    }
+
+    #wrapper{
+        display: inline-block;
+        /*background-color: #ededed;*/
+        width: 1030px;
+        height: 90px;
+        margin-right: 150px;
+    }
+
+    #a1{
+        text-decoration: none;
+        color: #000000;
+        position: absolute;
+        right: 320px;
+    }
+    #a1:hover{
+        color: #9C27B0;
+    }
+    #a3{
+        text-decoration: none;
+        color: #000000;
+        position: absolute;
+        right: 130px;
+    }
+    #a3:hover{
+        color: #9C27B0;
+    }
+    #a4{
+        text-decoration: none;
+        color: #000000;
+        position: absolute;
+        right: 225px;
+    }
+    #a4:hover{
+        color: #9C27B0;
+    }
+    #a5{
+        text-decoration: none;
+        color: #000000;
+        margin-right: 20px;
+        position: absolute;
+        right: 200px;
+    }
+    #a5:hover{
+        color: #9C27B0;
+    }
+    #a6{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.91);
+        margin-right: 210px;
+        position: absolute;
+        right: 410px;
+    }
+    #a6:hover{
+        color: #9C27B0;
+    }
+    #a7{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.91);
+        margin-right: 560px;
+        position: absolute;
+        right: 410px;
+    }
+    #a7:hover{
+        color: #9C27B0;
+    }
+    #iconhead{
+        /*background-color: #b66db5;*/
+        width: 150px;
+        height: 90px;
+        float: left;
+        margin-left: 10px;
+        position: relative;
+    }
+    #iconhead .iconh{
+        /*background-color: #efefef;*/
+        border-radius: 3px;
+        position: absolute;
+        top: 30px;
+
+    }
+    #iconhead .iconh:hover{
+
+        scale: 1.1;
+        border-radius: 3px;
+    }
+    #iconhead .iconh:nth-of-type(2)
+    {
+        right: 55px;
+    }
+    #iconhead .iconh:nth-of-type(3)
+    {
+        right: 105px;
+    }
+
+    li{
+        list-style-type: none;
+    }
+
+    #panel {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height:100%;
+        padding: 10px;
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+        /*font-weight: bold;*/
+        font-family: "B Nazanin";
+        font-size: 25px;
+        direction: rtl;
+        z-index: 2;
+    }
+    #close{
+        position: absolute;
+        left: 10px;
+        top: 17px;
+        font-size: 20px;
+        color: black;
+    }
+    #close:hover{
+        color: #726b6c;
+        cursor: pointer;
+    }
+
+
+    .panel {
+        line-height:300%;
+        /*background-color: #fdfdfd;*/
+        /*width: 200px;*/
+        /*position:relative;*/
+        /*left: 40px;*/
+        /*z-index: 2;*/
+        border-radius: 2px;
+
+
+    }
+    .subitem-panel
+    {
+        position:relative;
+        left: 230px;
+        top: 130px;
+        /*z-index: 2;*/
+        color: black;
+        /*background-color: yellow;*/
+        width: 170px;
+
+    }
+
+    .submenu-panel{       /* مشکل این رو نمیدونم چیه که یه صفحه دیگع تو پنل ظاهر میشه */
+        display:none;
+        position:absolute;
+        top:0;
+        /*left:240px;*/
+        right: 200px;
+        /*width:160px;*/
+        /*background-color: red;*/
+        z-index: 2;
+        width: 1px;
+        height: 1px;
+        /*background-color: red;*/
+
+
+    }
+    .panel:hover > .submenu-panel , .subitem-panel:hover > .submenu-panel{
+        display:block;
+    }
+    .panel:hover  {
+        /*background-color: #9C27B0;*/
+        cursor: pointer;
+
+    }
+    .subitem-panel:hover{
+        cursor: pointer;
+
+    }
+    .item-panel{
+        color: black;
+    }
+    .item-panel:hover{
+        color: #9C27B0;
+    }
+    #text-panel{
+        color: black;
+    }
+    #text-panel:hover{
+        color: #9C27B0;
+    }
+    #dropdown-menu {
+        display: none;
+        background-color: #ededed;
+        position: absolute;
+        width: 145px;
+        text-align: right;
+        border-radius: 5px;
+        top: 50px;
+        z-index: 2;
+        font-family: roya;
+    }
+
+    .hidden {
+        display: none;
+    }
+    #dropdown-btn{
+        cursor: pointer;
+        font-family: roya;
+        position: absolute;
+        right: 10px;
+        color: black;
+        top: 15px;
+    }
+    #dropdown-btn:hover{
+        opacity: 50%;
+    }
+
+    #dropdown-menu a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #000000;
+    }
+
+    #dropdown-menu a:hover {
+        color: #7c2a7a;
+    }
+
+    .status{
+        width: 100.5%;
+        height: 40px;
+        background-color: #7c2a7a;
+    }
+    #realname-exit{
+        margin-top: 1px;
+        margin-right: 10px;
+    }
+
+/******************************************************
+
+ */
+    #text_footer{
+        color: black;
+        font-family: "B Nazanin";
+        font-size: 20px;
+       position: relative;
+        top: 400px;
+        padding-right: 20px;
+    }
+    #text_footer1{
+        color: black;
+        font-family: "B Nazanin";
+        font-size: 20px;
+        padding-right: 25px;
+        position: relative;
+        top: 400px;
+    }
+    #finishtext_footer{
+        color: black;
+        font-family: "B Nazanin";
+        font-size: 16px;
+        position: relative;
+        top: 400px;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+#footer{
+        background-color: #ffffff;
+        width: 1340px;
+        /*height: 705px;*/
+    margin-top: 100px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+    }
+
+    #footer .partdiv{
+        background-color: white;
+        width: 447px;
+        height: 230px;
+        border-bottom:1px solid rgba(0, 0, 0, 0.15);
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+        float: right;
+    }
+    .clear{
+        clear: both;
+    }
+    #footer .partdiv:nth-child(2){
+        background-color: white;
+        width: 443px;
+        height: 230px;
+        border-bottom:1px solid rgba(0, 0, 0, 0.15);
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+        float: right;
+    }
+    #footer .partdiv:nth-child(3){
+        background-color: white;
+        width: 447px;
+        height: 230px;
+        border-bottom:1px solid rgba(0, 0, 0, 0.15);
+        border-left: 1px solid rgba(0, 0, 0, 0.15);
+        float: right;
+    }
+    #footer .partdiv .partimg{
+        width: 34px;
+        height: 34px;
+        margin-right: 198px;
+        margin-top: 30px;
+    }
+    #footer .partdiv #parttext1{
+        font-size: 20px;
+        padding-right: 110px;
+        font-family: roya;
+    }
+    #footer .partdiv #parttext2{
+        font-size: 15px;
+        padding-right: 65px;
+        font-family: roya;
+    }
+    #footer .partdiv #parttext3{
+        font-size: 15px;
+        /*padding-right: 170px;*/
+        /*padding-top: 20px;*/
+        font-family: roya;
+        position: absolute;
+        right: 185px;
+    }
+    #footer .partdiv .partlink{
+        color: black;
+    }
+    #footer .partdiv .partlink:hover{
+        color: #9C27B0;
+    }
+
+    /**/
+    #footer .partdiv .partimg{
+        width: 34px;
+        height: 34px;
+        margin-right: 198px;
+        margin-top: 30px;
+    }
+    #footer .partdiv #parttext4{
+        font-size: 20px;
+        padding-right: 165px;
+        font-family: roya;
+    }
+    #footer .partdiv #parttext5{
+        font-size: 15px;
+        padding-right: 65px;
+        font-family: roya;
+    }
+    #footer .partdiv #parttext6{
+        font-size: 15px;
+        /*padding-right: 170px;*/
+        /*padding-top: 20px;*/
+        font-family: roya;
+        position: absolute;
+        right: 640px;
+    }
+    #footer .partdiv .partlink{
+        color: black;
+    }
+    #footer .partdiv .partlink:hover{
+        color: #9C27B0;
+    }
+    /**/
+    #footer .partdiv .partimg{
+        width: 34px;
+        height: 34px;
+        margin-right: 198px;
+        margin-top: 30px;
+    }
+    #footer .partdiv #parttext7{
+        font-size: 20px;
+        padding-right: 165px;
+        font-family: roya;
+    }
+    #footer .partdiv #parttext8{
+        font-size: 15px;
+        padding-right: 55px;
+        font-family: roya;
+    }
+    #footer .partdiv #parttext9{
+        font-size: 15px;
+        /*padding-right: 170px;*/
+        /*padding-top: 20px;*/
+        font-family: roya;
+        position: absolute;
+        right: 1090px;
+    }
+    #footer .partdiv .partlink{
+        color: black;
+    }
+    #footer .partdiv .partlink:hover{
+        color: #9C27B0;
+    }
+    #footer .underdivh{
+        display: inline-block;
+        padding-top: 45px;
+        padding-right: 170px;
+        font-size: 20px;
+        font-family: roya;
+    }
+    #footer .underdivh:nth-of-type(2){
+        padding-right: 275px;
+
+    }
+    #footer .underdivh:nth-of-type(3){
+        padding-right: 200px;
+    }
+    #footer .underdivh:nth-of-type(4){
+        padding-right: 100px;
+    }
+
+    #footer .underdivli{
+        display: block;
+        /*padding-right: 170px;*/
+        color: black;
+        font-family: roya;
+    }
+    #footer .underdivli:hover{
+        color: #7c2a7a;
+    }
+    #footer #minunder{
+        background-color: #ffffff;
+        width: 1340px;
+        height: 100px;
+    }
+    #footer #minunder2{
+        background-color: #ffffff;
+        width: 200px;
+        margin-right: 170px;
+        float: right;
+    }
+    #footer #minunder2 .underdivli{
+        display: inline;
+        line-height: 45px;
+
+    }
+    #footer #minunder3{
+        background-color: #fdfdfd;
+        width: 238px;
+        margin-right: 120px;
+        float: right;
+
+    }
+    #footer #minunder3 .underdivli{
+        display: inline;
+        line-height: 45px;
+
+    }
+    #footer #minunder4{
+        background-color: #fdfdfd;
+        width: 116px;
+        margin-right: 75px;
+        float: right;
+    }
+    #footer #minunder4 .underdivli{
+        display: inline;
+        line-height: 45px;
+
+    }
+    #footer #minunder5{
+        background-color: #fdfdfd;
+        width: 116px;
+        margin-right: 84px;
+        float: right;
+    }
+    #footer #minunder5 .underdivli{
+        display: inline;
+        line-height: 45px;
+
+    }
+    #footer .imgfooter{
+        width: 250px;
+        height: 92px;
+        margin-top: 40px;
+        margin-right: 550px;
+    }
+    #footer .imgfooter:nth-of-type(2){
+        width: 250px;
+        height: 92px;
+        margin-top: 80px;
+        margin-right: 55px;
+    }
+    #footer #undimgfo{
+        font-family: roya;
+        padding-right: 590px;
+        color: rgba(0, 0, 0, 0.76);
+    }
+
+    #footer #particon{
+        background-color: #ffffff;
+        width: 500px;
+        height: 100px;
+        margin-right: auto;
+        margin-left: auto;
+
+    }
+    #footer #finish{
+        background-color: #f8f6f6;
+        width: 1340px;
+
+    }
+    #footer .finishtext{
+        display: inline-block;
+        /*height: 100px;*/
+        font-family: roya;
+
+
+    }
+    #footer .linkfinish{
+        color: black;
+        margin-right: 20px;
+        font-family: roya;
+    }
+
+    #footer .linkfinish:hover{
+        color: #7c1c7a;
+    }
+
+    #footer .finishtext:nth-of-type(2){
+        font-size: 18px;
+    }
+
+
+
+
+</style>
+
+<body>
+
+
+
+
+<!--header-->
+<div class="status">
+    <a id="dropdown-btn" > ورود به حساب کاربری/ثبت نام </a>
+    <div id="dropdown-menu" class="hidden">
+
+        <a href="#" > ثبت نام </a>
+
+
+        <a href="#"> خروج از حساب کاربری </a>
+
+    </div>
+</div>
+<div id="first">
+    <ul id="fistu">
+        <img id="pic1" src="pic/Screenshot 2023-11-11 001806_prev_ui (2).png" height="55" width="155" align="right"/>
+        <div id="wrapper">
+            <li class="head"><a id="a1" href="#"> صفحه اصلی </a></li>
+
+
+
+            <div class="dropdown2">
+                <li class="head"><a id="a3" href="#">  فروشگاه </a></li>
+                <ul class="dropdown-contect2">
+
+                    <div id="sec2-2">
+                        <li> <h4 id="zirtext2-2"> دسته بندی محصولات فروشگاه </h4> </li>
+                        <div class="clear"></div>
+                        <li> <a href="#"> آرایشی و زیبایی </a> </li>
+                        <li> <a href="#"> بهداشتی و مراقبتی </a> </li>
+                        <li> <a href="#">  خوشبو کننده </a> </li>
+                        <!--                        <li> <a href="#">  مراقبت بدن </a> </li>-->
+                        <li> <a href="#">  سلولزی </a> </li>
+                        <li> <a href="#">  خوراکی و نوشیدنی </a> </li>
+                        <li> <a href="#">  محصولات تبلیغاتی و جانبی </a> </li>
+
+                    </div>
+
+                </ul>
+
+            </div>
+            <!--            <div class="dropdown3">-->
+            <!--                <li class="head"><a id="a4" href="#">  درباره ما </a></li>-->
+            <!--                <ul class="dropdown-contect3">-->
+            <!--                    <div id="sec3-1">-->
+            <!--                        <li> <h4 id="zirtext3-1"> درباره شرکت </h4> </li>-->
+            <!--                        <div class="clear"></div>-->
+            <!--                        <li> <a href="#"> درباره گروه صنعتی وطن زرین </a> </li>-->
+            <!--                        <li> <a href="#">   PMLM  چیست  </a> </li>-->
+            <!--                        <li> <a href="#">  چارت تیم و سازمان ها </a> </li>-->
+            <!--                        <li> <a href="#">  تاریخچه پی ام ال ام </a> </li>-->
+            <!--                        <li> <a href="#">  ارکان و ماموریت چشم انداز </a> </li>-->
+            <!--                        <li> <a href="#">  افتخارات و جوایز </a> </li>-->
+            <!--                        <li> <a href="#">  مجوز ها </a> </li>-->
+            <!---->
+            <!--                    </div>-->
+            <!---->
+            <!--                </ul>-->
+            <!--                </li>-->
+            <!--            </div>-->
+
+            <div class="dropdown4">
+                <li class="head"><a id="a5" href="#">  تماس با ما </a></li>
+                <!--                <ul class="dropdown-contect4">-->
+                <!--                    <div id="sec-4-1">-->
+                <!--                        <li><h4 id="zirtext4-1"> راه های ارتباطی با ما </h4></li>-->
+                <!--                        <li><a href="call.php"> دفتر مرکزی PMLM </a></li>-->
+                <!--                        <li><a href="#"> شعب و دفاتر PMLM </a></li>-->
+                <!--                        <li><a href="#"> صدور مجور شعب راهبردی </a></li>-->
+                <!--                        <li><a href="#"> سنجش رضایتمندی </a></li>-->
+                <!--                    </div>-->
+                <!--                </ul>-->
+            </div>
+            <p class="head"><a id="a6" href="#">مشاوره پوست و مو</a></p>
+
+            <!--            ************************************-->
+
+
+
+            <!--                        <div id="iconhead">-->
+            <!--                           <img class="iconh" src="icons/icons8-search-50.png" width="30" height="30"  >-->
+            <!--                            <a href="#" style="margin-right: 55px" ><img   title="سبد کالا" class="iconh" src="icons/icons8-shopping-bag-50.png" width="30" height="30"  onclick="Panel()"></a>-->
+            <!--                            <div id="panel">سبد خرید-->
+            <!--                                <a id="close" >✖</a>-->
+            <!--                                <hr>-->
+
+            <!--                                <li style="font-size: 18px;font-weight: bold" class="panel">-->
+            <!--                                    <a id="text-panel">ابتدا محصولی را از فروشگاه برای خرید انتخاب کنید</a>-->
+            <!--                                    <ul class="submenu-panel">-->
+            <!--                                        <li class="subitem-panel"><a  href="beauty.php" class="item-panel">آرایشی و زیبایی</a></li>-->
+            <!--                                        <li class="subitem-panel"><a href="Health_and_care.php" class="item-panel" >بهداشتی و مراقبتی</a></li>-->
+            <!--                                        <li class="subitem-panel"><a  href="Freshener.php" class="item-panel">خوشبو کننده</a></li>-->
+            <!--                                        <li class="subitem-panel"><a  href="Cellulose.php" class="item-panel">سلولزی</a></li>-->
+            <!--                                        <li class="subitem-panel"><a  href="Combined_packages.php" class="item-panel">خوراکی و نوشیدنی</a></li>-->
+            <!--                                        <li class="subitem-panel"><a  href="Promotional_goods.php" class="item-panel">محصولات تبلیغاتی و نوشیدنی</a></li>-->
+            <!--                                    </ul>-->
+            <!---->
+            <!---->
+            <!--                                </li>-->
+
+            <!--                            </div>-->
+            <!--                                          <img class="iconh" src="icons/icons8-heart-50.png" width="30" height="30" >-->
+            <!--                            <a href="logiintotheaccount.php"  style="margin-right: 110px" target="_blank"><img title="ورود به حساب کاربری" class="iconh" src="icons/sign-in.png" width="30" height="30"  ></a>-->
+            <!--                        </div>-->
+
+
+        </div>
+    </ul>
+
+</div>
+<div id="div-baner" style="width: 1220px">
+
+    <div id="content-baner">
+        <h1 id="text-baner" > خوش آمدید به سایت ما </h1>
+        <p id="text-baner-2"> میتوانید برای مشاهده دسته بندی محصولات روی فلش روبه رو کلیک کنید </p>
+        <a id="down" >&#8595;</a>
+        <img src="baner/woman.png" id="woman-baner-f">
+        <img src="baner/man.png" id="man-baner-f">
+    </div>
+</div>
+
+<div id="shopdiv">
+    <h1 id="text1"> دسته بندی محصولات فروشگاه </h1>
+    <a href="#"><img class="shop" src="pic/9384f3ec-43ac-480c-adce-43ce2b9612d6.png" height="190" width="190"/></a>
+    <a href="#"><img class="shop" src="pic/b9979734-e9fd-4760-b821-ed4307a73b60.png" height="190" width="190"/></a>
+    <a href="#"><img class="shop" src="pic/3ed802e9-71b8-40d4-b41f-94a7de99edec.png" height="190" width="190"/></a>
+    <a href="#"><img class="shop" src="pic/dd1ae150-ebab-4905-9866-20fc98788834.png" height="190" width="190"/></a>
+    <a href="#"><img class="shop" src="pic/9be0e0fe-4cb7-4f6d-b76c-a803a2cf0518.png" height="190" width="190"/></a>
+    <a href="#"><img class="shop" src="pic/f8a437e5-ca4f-4a5e-a609-e5baf7a2b3e8.png" height="190" width="190"/></a>
+</div>
+<div class="textshop">
+    <a  href="#"><p id="shopm6"> زیبایی  </p></a>
+    <a  href="#"><p id="shopm5"> بهداشتی و مراقبتی  </p></a>
+    <a  href="#"><p id="shopm4"> خوشبوکننده  </p></a>
+    <a  href="#"><p id="shopm3"> سلولزی  </p></a>
+    <a  href="#"><p id="shopm2" > کالای تبلیغاتی </p></a>
+    <a  href="#"><p id="shopm1"> بسته های ترکیبی </p></a>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="Slides">
+    <h1 id="tp1">محصولات پیشنهاد روز </h1>
+    <div class="slide-c" id="slide1">
+        <div class="carrd" style="float: left;margin-left: 50px;margin-top: 130px">
+            <div class="imgBx">
+                <img src="piichealth/2.png" >
+            </div>
+            <div class="contentBx">
+                <h2>بهداشتی و مراقبتی</h2>
+                <div class="texts">
+                    <h4  >کرم گیاهی نرم‌کننده دست و صورت لدورا هربال 50 میلی لیتر</h4>
+                    <p>موجودی انبار:6,891</p>
+                    <p> قیمت:1,356,614 ریال</p>
+                </div>
+                <a href="#"><p>افزودن به سبد خرید</p></a>
+            </div>
+        </div>
+        <div class="carrd" style="float: left;margin-left: 80px;margin-top: 130px">
+            <div class="imgBx">
+                <img src="piichealth/3.png"  >
+            </div>
+            <div class="contentBx">
+                <h2>بهداشتی و مراقبتی</h2>
+                <div class="texts">
+                    <h4  >ماسک پیل‌آف لدورا 150 میلی لیتر</h4>
+                    <p>موجودی انبار:6,680</p>
+                    <p> قیمت:1,591,574 ریال</p>
+                </div>
+                <a href="#"><p>افزودن به سبد خرید</p></a>
+            </div>
+        </div>
+        <div class="carrd" style="float: right;margin-right: 50px;margin-top: 130px">
+            <div class="imgBx">
+                <img src="piichealth/4.png" >
+            </div>
+            <div class="contentBx">
+                <h2>بهداشتی و مراقبتی</h2>
+                <div class="texts">
+                    <h4 style="font-size: 15px" >ماسک گیاهی نرم‌کننده  موی سر لدورا هربال 200 میلی لیتر</h4>
+                    <p>موجودی انبار:5,987</p>
+                    <p> قیمت:1,827,276 ریال</p>
+                </div>
+                <a href="#"><p>افزودن به سبد خرید</p></a>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="slide-c" id="slide2">
+        <div class="carrd" style="float: left;margin-left: 50px;margin-top: 130px">
+            <div class="imgBx">
+                <img src="piichealth/5.png" >
+            </div>
+            <div class="contentBx">
+                <h2>بهداشتی و مراقبتی</h2>
+                <div class="texts">
+                    <h4  >محلول آرایش پاک‌‌کن دوفاز ویتامینه لدورا 200 میلی لیتر</h4>
+                    <p>موجودی انبار:5,228</p>
+                    <p> قیمت:2,975,700 ریال</p>
+                </div>
+                <a href="#"><p>افزودن به سبد خرید</p></a>
+            </div>
+        </div>
+        <div class="carrd" style="float: left;margin-left: 80px;margin-top: 130px">
+            <div class="imgBx">
+                <img src="piichealth/6.png" >
+            </div>
+            <div class="contentBx">
+                <h2>بهداشتی و مراقبتی</h2>
+                <div class="texts">
+                    <h4  >شیر پاک‌کن ویتامینه لدورا 200 میلی‌لیتر</h4>
+                    <p>موجودی انبار:5,110</p>
+                    <p> قیمت:3,684,200 ریال</p>
+                </div>
+                <a href="#"><p>افزودن به سبد خرید</p></a>
+            </div>
+        </div>
+        <div class="carrd" style="float: right;margin-right: 50px;margin-top: 130px">
+            <div class="imgBx">
+                <img src="piichealth/7.png" >
+            </div>
+            <div class="contentBx">
+                <h2>بهداشتی و مراقبتی</h2>
+                <div class="texts">
+                    <h4  >کرم چندمنظوره ترک پا لدورا ۱۰۰ گرمی</h4>
+                    <p>موجودی انبار:5,021</p>
+                    <p> قیمت:1,771,250 ریال</p>
+                </div>
+                <a href="#"><p>افزودن به سبد خرید</p></a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="footer" style="border: 0px">
+    <a href="#" id="text_footer"> خانه</a>
+    <a href="#" id="text_footer1">تماس با ما</a>
+    <p id="finishtext_footer" >فعالیت بازاریابی شبکه‌ای مروارید پنبه‌ریز بصورت یک شخص حقوقی مستقل، دارای پروانه کسب بازاریابی شبکه‌ای مطابق آئین نامه تبصره ماده 87 قانون نظام صنفی می‌باشد و این شرکت هیچگونه وابستگی به ارگانها و نهادهای دولتی، غیر دولتی و امنیتی ندارد.</p>
+
+
+    <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 490" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+
+        <style>
+
+            .path-0{
+                animation:pathAnim-0 4s;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+            }
+            @keyframes pathAnim-0{
+                0%{
+                    d: path("M 0,500 L 0,125 C 68.05044182621502,137.12039764359352 136.10088365243004,149.24079528718704 189,147 C 241.89911634756996,144.75920471281296 279.6469072164948,128.15721649484533 337,113 C 394.3530927835052,97.84278350515466 471.3114874815907,84.13033873343151 538,96 C 604.6885125184093,107.86966126656849 661.1071428571429,145.32142857142858 726,156 C 790.8928571428571,166.67857142857142 864.2599410898381,150.5839469808542 917,150 C 969.7400589101619,149.4160530191458 1001.853092783505,164.34278350515464 1059,163 C 1116.146907216495,161.65721649484536 1198.3276877761414,144.04491899852724 1266,135 C 1333.6723122238586,125.95508100147275 1386.8361561119293,125.47754050073638 1440,125 L 1440,500 L 0,500 Z");
+                }
+                25%{
+                    d: path("M 0,500 L 0,125 C 72.21704712812961,106.70618556701031 144.43409425625921,88.41237113402062 200,79 C 255.56590574374079,69.58762886597938 294.4806701030928,69.05670103092785 344,76 C 393.5193298969072,82.94329896907215 453.64322533136976,97.36082474226802 522,118 C 590.3567746686302,138.63917525773198 666.9464285714286,165.5 739,148 C 811.0535714285714,130.5 878.5710603829162,68.63917525773198 927,64 C 975.4289396170838,59.36082474226802 1004.769329896907,111.94329896907216 1055,119 C 1105.230670103093,126.05670103092784 1176.3516200294553,87.58762886597938 1244,81 C 1311.6483799705447,74.41237113402062 1375.8241899852724,99.70618556701031 1440,125 L 1440,500 L 0,500 Z");
+                }
+                50%{
+                    d: path("M 0,500 L 0,125 C 67.84812223858617,136.8370765832106 135.69624447717234,148.6741531664212 199,141 C 262.30375552282766,133.3258468335788 321.06314432989694,106.14046391752576 384,116 C 446.93685567010306,125.85953608247424 514.0511782032399,172.7639911634757 563,162 C 611.9488217967601,151.2360088365243 642.7321428571429,82.80357142857142 694,78 C 745.2678571428571,73.19642857142858 817.0202503681886,132.0217231222386 878,131 C 938.9797496318114,129.9782768777614 989.1868556701029,69.10953608247422 1048,66 C 1106.813144329897,62.89046391752577 1174.2323269513993,117.54013254786452 1241,137 C 1307.7676730486007,156.45986745213548 1373.8838365243005,140.72993372606774 1440,125 L 1440,500 L 0,500 Z");
+                }
+                75%{
+                    d: path("M 0,500 L 0,125 C 45.21502209131076,114.514911634757 90.43004418262151,104.02982326951398 159,111 C 227.56995581737849,117.97017673048602 319.49484536082474,142.39561855670104 389,148 C 458.50515463917526,153.60438144329896 505.59057437407967,140.38770250368188 555,134 C 604.4094256259203,127.61229749631812 656.1428571428571,128.05357142857142 722,116 C 787.8571428571429,103.94642857142858 867.8379970544918,79.39801178203243 932,93 C 996.1620029455082,106.60198821796757 1044.5051546391753,158.35438144329896 1094,158 C 1143.4948453608247,157.64561855670104 1194.141384388807,105.18446244477173 1252,91 C 1309.858615611193,76.81553755522827 1374.9293078055966,100.90776877761414 1440,125 L 1440,500 L 0,500 Z");
+                }
+                100%{
+                    d: path("M 0,500 L 0,125 C 68.05044182621502,137.12039764359352 136.10088365243004,149.24079528718704 189,147 C 241.89911634756996,144.75920471281296 279.6469072164948,128.15721649484533 337,113 C 394.3530927835052,97.84278350515466 471.3114874815907,84.13033873343151 538,96 C 604.6885125184093,107.86966126656849 661.1071428571429,145.32142857142858 726,156 C 790.8928571428571,166.67857142857142 864.2599410898381,150.5839469808542 917,150 C 969.7400589101619,149.4160530191458 1001.853092783505,164.34278350515464 1059,163 C 1116.146907216495,161.65721649484536 1198.3276877761414,144.04491899852724 1266,135 C 1333.6723122238586,125.95508100147275 1386.8361561119293,125.47754050073638 1440,125 L 1440,500 L 0,500 Z");
+                }
+            }</style><defs><linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#F78DA7"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs><path d="M 0,500 L 0,125 C 68.05044182621502,137.12039764359352 136.10088365243004,149.24079528718704 189,147 C 241.89911634756996,144.75920471281296 279.6469072164948,128.15721649484533 337,113 C 394.3530927835052,97.84278350515466 471.3114874815907,84.13033873343151 538,96 C 604.6885125184093,107.86966126656849 661.1071428571429,145.32142857142858 726,156 C 790.8928571428571,166.67857142857142 864.2599410898381,150.5839469808542 917,150 C 969.7400589101619,149.4160530191458 1001.853092783505,164.34278350515464 1059,163 C 1116.146907216495,161.65721649484536 1198.3276877761414,144.04491899852724 1266,135 C 1333.6723122238586,125.95508100147275 1386.8361561119293,125.47754050073638 1440,125 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="0.53" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><style>
+        .path-1{
+            animation:pathAnim-1 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes pathAnim-1{
+            0%{
+                d: path("M 0,500 L 0,291 C 47.35272459499264,279.394145802651 94.70544918998527,267.78829160530194 166,268 C 237.29455081001473,268.21170839469806 332.53092783505156,280.24097938144325 389,292 C 445.46907216494844,303.75902061855675 463.1708394698086,315.24779086892494 510,321 C 556.8291605301914,326.75220913107506 632.7857142857143,326.76785714285717 705,317 C 777.2142857142857,307.23214285714283 845.6863033873343,287.68078055964656 912,293 C 978.3136966126657,298.31921944035344 1042.4690721649483,328.5090206185567 1095,322 C 1147.5309278350517,315.4909793814433 1188.437407952872,272.2831369661267 1244,261 C 1299.562592047128,249.71686303387335 1369.781296023564,270.35843151693666 1440,291 L 1440,500 L 0,500 Z");
+            }
+            25%{
+                d: path("M 0,500 L 0,291 C 68.27374815905743,267.5548600883652 136.54749631811487,244.1097201767305 192,241 C 247.45250368188513,237.8902798232695 290.083762886598,255.11597938144325 348,274 C 405.916237113402,292.88402061855675 479.1174521354934,313.4263622974963 545,307 C 610.8825478645066,300.5736377025037 669.4464285714286,267.17857142857144 732,270 C 794.5535714285714,272.82142857142856 861.0968335787926,311.85935198821795 908,333 C 954.9031664212074,354.14064801178205 982.1662371134018,357.38402061855675 1046,330 C 1109.8337628865982,302.61597938144325 1210.2382179675997,244.6045655375552 1282,233 C 1353.7617820324003,221.3954344624448 1396.8808910162002,256.1977172312224 1440,291 L 1440,500 L 0,500 Z");
+            }
+            50%{
+                d: path("M 0,500 L 0,291 C 61.59867452135494,329.9136597938144 123.19734904270987,368.8273195876289 189,350 C 254.80265095729013,331.1726804123711 324.80927835051546,254.604381443299 375,242 C 425.19072164948454,229.395618556701 455.5655375552283,280.75515463917526 519,313 C 582.4344624447717,345.24484536082474 678.9285714285714,358.375 740,344 C 801.0714285714286,329.625 826.720176730486,287.74484536082474 887,282 C 947.279823269514,276.25515463917526 1042.1907216494847,306.64561855670104 1106,313 C 1169.8092783505153,319.35438144329896 1202.5169366715759,301.67268041237116 1253,294 C 1303.4830633284241,286.32731958762884 1371.741531664212,288.6636597938144 1440,291 L 1440,500 L 0,500 Z");
+            }
+            75%{
+                d: path("M 0,500 L 0,291 C 73.07658321060383,276.44182621502205 146.15316642120766,261.88365243004415 200,275 C 253.84683357879234,288.11634756995585 288.4639175257732,328.9072164948454 348,325 C 407.5360824742268,321.0927835051546 491.99116347569964,272.48748159057436 562,274 C 632.0088365243004,275.51251840942564 687.5714285714286,327.14285714285717 750,344 C 812.4285714285714,360.85714285714283 881.7231222385863,342.9410898379971 929,317 C 976.2768777614137,291.0589101620029 1001.5360824742268,257.0927835051546 1047,258 C 1092.4639175257732,258.9072164948454 1158.1325478645067,294.6877761413844 1227,306 C 1295.8674521354933,317.3122238586156 1367.9337260677466,304.1561119293078 1440,291 L 1440,500 L 0,500 Z");
+            }
+            100%{
+                d: path("M 0,500 L 0,291 C 47.35272459499264,279.394145802651 94.70544918998527,267.78829160530194 166,268 C 237.29455081001473,268.21170839469806 332.53092783505156,280.24097938144325 389,292 C 445.46907216494844,303.75902061855675 463.1708394698086,315.24779086892494 510,321 C 556.8291605301914,326.75220913107506 632.7857142857143,326.76785714285717 705,317 C 777.2142857142857,307.23214285714283 845.6863033873343,287.68078055964656 912,293 C 978.3136966126657,298.31921944035344 1042.4690721649483,328.5090206185567 1095,322 C 1147.5309278350517,315.4909793814433 1188.437407952872,272.2831369661267 1244,261 C 1299.562592047128,249.71686303387335 1369.781296023564,270.35843151693666 1440,291 L 1440,500 L 0,500 Z");
+            }
+        }
+
+    </style>
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="50%" x2="100%" y2="50%"><stop offset="5%" stop-color="#F78DA7"></stop><stop offset="95%" stop-color="#8ED1FC"></stop></linearGradient></defs>
+        <path d="M 0,500 L 0,291 C 47.35272459499264,279.394145802651 94.70544918998527,267.78829160530194 166,268 C 237.29455081001473,268.21170839469806 332.53092783505156,280.24097938144325 389,292 C 445.46907216494844,303.75902061855675 463.1708394698086,315.24779086892494 510,321 C 556.8291605301914,326.75220913107506 632.7857142857143,326.76785714285717 705,317 C 777.2142857142857,307.23214285714283 845.6863033873343,287.68078055964656 912,293 C 978.3136966126657,298.31921944035344 1042.4690721649483,328.5090206185567 1095,322 C 1147.5309278350517,315.4909793814433 1188.437407952872,272.2831369661267 1244,261 C 1299.562592047128,249.71686303387335 1369.781296023564,270.35843151693666 1440,291 L 1440,500 L 0,500 Z" stroke="none" stroke-width="0" fill="url(#gradient)" fill-opacity="1" class="transition-all duration-300 ease-in-out delay-150 path-1">
+
+        </path>
+
+    </svg>
+
+</div>
